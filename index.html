@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Livros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Livros</h1>
+  </header>
+
+  <main>
+    <section id="catalogo">
+      <h2>Livros Disponíveis</h2>
+      <div id="livros"></div>
+    </section>
+
+    <section id="reserva-form">
+      <h2>Reservar Livro</h2>
+      <form id="formReserva">
+        <input type="text" id="nomeCliente" placeholder="Seu nome" required />
+        <select id="livroSelecionado"></select>
+        <button type="submit">Reservar</button>
+      </form>
+      <p id="mensagem"></p>
+    </section>
+
+    <section id="reservas">
+      <h2>Reservas Feitas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th>Livro</th>
+            <th>Data</th>
+            <th>Expira em</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaReservas"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
